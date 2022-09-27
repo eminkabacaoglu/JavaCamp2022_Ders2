@@ -1,8 +1,5 @@
 package methods2;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -11,9 +8,7 @@ public class Main {
 		System.out.println(total);
 		
 		int totalForArgs=sumForArgs(1,8,9,21,45);
-		System.out.println(totalForArgs);
 		int totalForArgs2=sumForArgs(1,8,9);
-		System.out.println(totalForArgs2);
 
 	}
 	
@@ -36,11 +31,7 @@ public class Main {
 	}
 	
 	public static int sumForArgs(int... numbers) {//variable arguments
-		int total=0;
-		for(int num:numbers) {
-			total+=num;
-		}
-		return total;
+		return 0;
 	}
 
 }
