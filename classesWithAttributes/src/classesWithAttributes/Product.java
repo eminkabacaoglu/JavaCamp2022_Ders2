@@ -1,6 +1,7 @@
 package classesWithAttributes;
 
 public class Product {
+	
 	//attribute | field
 	private int id;
 	private String name;
@@ -8,6 +9,24 @@ public class Product {
 	private double price;
 	private int stockAmount;
 	private String code;
+	
+	//overloading
+	public Product(int id,String name, String description,double price,int stockAmount){
+		System.out.println("Constructor with parameter Blocked runs");
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.price = price;
+		this.stockAmount = stockAmount;
+	}
+	
+	public Product(){
+		System.out.println("non parameter Constructor Blocked runs");
+		
+	}
+	
+	
+	
 	
 	public int getId() {
 		return id;

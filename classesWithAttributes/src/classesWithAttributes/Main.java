@@ -11,10 +11,17 @@ public class Main {
 		product.setPrice(5000);
 		product.setStockAmount(3); 
 		
-		ProductManager productManager = new ProductManager();
-		productManager.add(product);
 		
+		Product product2 = new Product(2,"Tablet","Samsung Tablet",2000,4);
+		
+		
+		ProductManager productManager = new ProductManager();
+		
+		productManager.add(product);
 		System.out.println("Product Code: "+product.getCode());
+		
+		productManager.add(product2);
+		System.out.println("Product Code: "+product2.getCode());
 
 	}
 
