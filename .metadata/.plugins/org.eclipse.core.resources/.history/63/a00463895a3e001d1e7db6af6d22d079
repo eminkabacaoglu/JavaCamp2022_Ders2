@@ -1,0 +1,37 @@
+package methods;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		findNumber();
+
+	}
+	
+	public static void findNumber() {
+		int[] numbers = new int[] { 1, 2, 5, 7, 9, 0 };
+		int findNumber = 5;
+
+		boolean isExist = false;
+
+		for (int sayi : numbers) {
+			if (sayi == findNumber) {
+				isExist = true;
+				break;
+			}
+		}
+		String message="";
+		if (isExist) {
+			message="Number is found:"+ findNumber;
+			showMessage(message);
+		} else {
+			message="Number s not found:"+ findNumber;
+			showMessage(message);
+		}
+	}
+	
+	public static void showMessage(String message) {
+		System.out.println(message);
+	}
+
+}

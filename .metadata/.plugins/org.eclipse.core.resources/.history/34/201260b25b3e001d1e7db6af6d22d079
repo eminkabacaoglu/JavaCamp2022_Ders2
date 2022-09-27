@@ -1,0 +1,29 @@
+package methods2;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String city = sendCity();
+		int total = sum(5,6);
+
+	}
+	
+	public static void add() {
+		System.out.println("Added...");
+	}
+	public static void delete() {
+		System.out.println("Deleted...");
+	}
+	public static void update() {
+		System.out.println("Updated...");
+	}
+	
+	public static String sendCity() {
+		return "Ankara";
+	}
+	
+	public static int sum(int num1,int num2) {
+		return num1+num2;
+	}
+
+}
